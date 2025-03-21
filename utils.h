@@ -182,6 +182,32 @@ exit_crash(unsigned int i); /* function guaranteed to crash (Writes to NULL).*/
 
 #endif
 
+/*VECTOR*/
+
+typedef struct {
+  int *arr;
+  size_t size;     /*user size*/
+  size_t capacity; /*actual size*/
+} Vector;
+
+Vector create_vector(size_t size);
+void destroy_vector(Vector *vector);
+void expand_capacity_vector(Vector *vector);
+size_t get_size_vector(Vector *vector);
+int get_index_vector(Vector *vector, size_t index);
+void set_index_vector(Vector *vector, size_t index, int value);
+void print_vector(Vector *vector);
+int find_value_vector(Vector *vector, int value);
+int get_front_vector(Vector *vector);
+int get_back_vector(Vector *vector);
+void push_back_vector(Vector *vector, int value);
+void insert_vector(Vector *vector, size_t index, int value);
+void right_rotate_vector(Vector *vector);
+void left_rotate_vector(Vector *vector);
+void right_rotate_n_times_vector(Vector *vector, int times);
+int pop_vector(Vector *vector, size_t index);
+int find_transposition_vector(Vector *vector, int value);
+
 #ifdef __cplusplus
 }
 #endif

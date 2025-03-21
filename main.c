@@ -1,9 +1,12 @@
 #define MEMORY_DEBUG
 #define EXIT_CRASH
 #include "utils.h"
-#include <stdlib.h>
 
 int main(int argc, char **argv) {
+
+  // Initialize the memory debugging system
+  debug_memory_init(NULL, NULL, NULL);
+  debug_mem_print(0);
 
   printf("argc: %d\n", argc);
   int i;
@@ -13,21 +16,32 @@ int main(int argc, char **argv) {
     printf("%d\n", __LINE__);
   }
 
-  debug_puts("hello", __LINE__, __FILE__);
-  puts("print_matrix_neighbor_coordinates_rules()");
-  print_matrix_neighbor_coordinates_rules();
-  puts("hello");
+  size_t n = 5;
+  Vector v = create_vector(n);
+  debug_mem_print(0);
+  for (size_t i = 0; i < n; ++i)
+    set_index_vector(&v, i, i);
+  debug_mem_print(0);
 
-  puts("All tests passed!");
-
-  // Initialize the memory debugging system
-  debug_memory_init(NULL, NULL, NULL);
+  print_vector(&v); /* 0 1 2 3 4 */
+  right_rotate_n_times_vector(&v, 5 * 1000);
+  print_vector(&v); // 0 1 2 3 4
+  right_rotate_n_times_vector(&v, 2);
+  print_vector(&v); // 3 4 0 1 2
+  size_t s = get_size_vector(&v);
+  printf("%lu\n", s);
+  left_rotate_vector(&v);
+  print_vector(&v); // 4 0 1 2 3
+  int val = pop_vector(&v, 2);
+  printf("%d\n", val); // 1
+  print_vector(&v);    // 4 0 2 3
+  val = find_transposition_vector(&v, 3);
+  printf("%d\n", val); // 2
+  print_vector(&v);    // 4 0 3 2
+  destroy_vector(&v);
 
   // Allocate some memory
-  /*int *ptr1 = (int *)debug_mem_malloc(100, __FILE__, __LINE__);*/
-  /*int *ptr2 = (int *)debug_mem_malloc(200, __FILE__, __LINE__);*/
   int *ptr1 = (int *)malloc(100 * sizeof(int));
-  debug_mem_print(0);
   int *ptr2 = (int *)malloc(200 * sizeof(int));
 
   // Free some memory
